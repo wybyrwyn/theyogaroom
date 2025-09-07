@@ -3321,21 +3321,27 @@ input, select, textarea {
   display: flex;
   align-items: center;
 }
-}
 
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: stretch; /* stretch children to full height */;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0px;
+  gap: 40px;
+}
+
+.logo-container {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-container img.logo {
-  width: 100%;
-  height: 100%;
+  max-width: 150px;
+  height: auto;
   object-fit: contain; /* or cover if you want it to crop */
 
 }
@@ -3347,6 +3353,7 @@ input, select, textarea {
 
 .text-box {
   flex: 1;
+  max-width: 600px;
   background-color: transparent;
   padding: 40px;
   display: flex;
