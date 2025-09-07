@@ -3323,7 +3323,7 @@ input, select, textarea {
 }
 
 .hero-content {
-  max-width: 1200px;
+  max-width: 45em;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -3340,8 +3340,8 @@ input, select, textarea {
 }
 
 .logo-container img.logo {
-  width: 150px;
-  max-width: auto;
+  width: 100%;
+  max-width: 150px;
   height: auto;
   object-fit: contain; /* or cover if you want it to crop */
 
