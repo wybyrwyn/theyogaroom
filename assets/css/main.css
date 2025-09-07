@@ -3329,11 +3329,19 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0px;
+  gap: 40px;
+}
+
+.logo-container {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-container img.logo {
   width: 150px;
+  max-width: auto;
   height: auto;
   object-fit: contain; /* or cover if you want it to crop */
 
