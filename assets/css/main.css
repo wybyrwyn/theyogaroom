@@ -3316,8 +3316,7 @@ input, select, textarea {
 .hero {
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: white;
-  padding: 0; /* remove padding so image can use full height */
-  min-height: 250px; /* adjust the banner height */
+  padding: 20px 0; 
   display: flex;
   align-items: center;
 }
@@ -3326,23 +3325,23 @@ input, select, textarea {
   max-width: 45em;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
 
 .logo-container {
-  flex: 0 0 150px;
+	flex: 0 0 clamp(200px, 22vw, 260px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo-container img.logo {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
+  height: 100%;
+  width: auto;
+	max-height: 100%;
   object-fit: contain; /* or cover if you want it to crop */
 
 }
@@ -3356,10 +3355,26 @@ input, select, textarea {
   flex: 1;
   max-width: 600px;
   background-color: transparent;
-  padding: 40px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 16px 0;
+  }
+
+  .text-box {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box {
+    padding: 0 16px;
+  }
 }
 
 .text-box h1 {
